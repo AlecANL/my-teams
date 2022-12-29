@@ -1,4 +1,5 @@
 ---
+import { ContactSection } from '../components/contact-section/contact-section'
 import { Footer } from '../components/footer/footer'
 import '../styles/globals.css'
 import '../styles/icons.css'
@@ -22,6 +23,7 @@ const { title } = Astro.props
   </head>
   <body>
     <slot />
+    <ContactSection />
     <Footer />
   </body>
 </html>

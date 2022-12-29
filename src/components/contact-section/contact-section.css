@@ -1,0 +1,72 @@
+.contact {
+  position: relative;
+  background-color: var(--light-coral);
+  max-height: 24.75rem;
+  min-height: 18.875rem;
+  overflow: hidden;
+}
+
+.pattern {
+  position: absolute;
+  bottom: -75px;
+  width: 200px;
+  height: 244px;
+  object-fit: contain;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 5.1875rem 0;
+}
+
+.contact-content h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--sacramento_state_green);
+}
+
+.contact-content a {
+  display: inline-block;
+  border: 2px solid var(--sacramento_state_green);
+  border-radius: 100px;
+  color: var(--sacramento_state_green);
+  padding: 12px 2rem;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.contact-content a:hover {
+  background-color: var(--sacramento_state_green);
+  color: var(--just-white);
+}
+
+@media (min-width: 768px) {
+  .contact {
+    min-height: 12.5rem;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5.25rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pattern {
+    bottom: -50px;
+  }
+
+  .contact-content {
+    justify-content: space-around;
+    margin: 4.75rem 0;
+  }
+
+  .contact-content h3 {
+    font-size: 3rem;
+  }
+}
