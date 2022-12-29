@@ -39,6 +39,11 @@
 .icon-pinterest:before {
   content: '\e903';
 }
+
+.icon-pint:before {
+  content: '\e903';
+}
+
 .icon-facebook:before {
   content: '\e904';
 }

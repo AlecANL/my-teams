@@ -1,0 +1,132 @@
+footer {
+  background-color: var(--dark_green);
+  color: var(--just-white);
+  padding: 4rem 1.5rem;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-nav a {
+  padding: 0.5rem 1.5rem;
+}
+
+.footer-nav a,
+.footer_social-media a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer_social-media a:hover {
+  color: var(--light-coral);
+}
+
+footer img {
+  width: 6rem;
+  height: 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.footer_address-box {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.6;
+  font-style: normal;
+}
+
+.footer_social-media,
+.footer_address-box {
+  text-align: center;
+}
+
+.footer_social-media {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer_social-media i {
+  font-size: 1.4rem;
+}
+
+.copy {
+  opacity: 0.6;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer img {
+    width: 6rem;
+    height: 1.5rem;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'logo address'
+      'menu address'
+      'social-media copy';
+  }
+
+  .footer-logo {
+    grid-area: logo;
+    margin: 0;
+  }
+
+  .copy {
+    text-align: end;
+    grid-area: copy;
+  }
+
+  .footer-nav {
+    grid-area: menu;
+  }
+
+  .footer-nav ul {
+    justify-content: flex-start;
+    margin-left: -1.5rem;
+  }
+
+  .footer_address-box {
+    margin-top: 0;
+    text-align: end;
+    grid-area: address;
+  }
+
+  .footer_social-media {
+    grid-area: social-media;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer-content {
+    grid-template-columns: 280px 1fr 280px;
+    grid-template-areas:
+      'logo address social-media'
+      'menu address copy';
+  }
+
+  .footer_address-box {
+    text-align: start;
+  }
+
+  .footer_social-media {
+    justify-content: end;
+    margin: 0;
+  }
+
+  footer img {
+    width: 10rem;
+    height: 2.5rem;
+  }
+}
