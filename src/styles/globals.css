@@ -21,6 +21,7 @@ html,
 body {
   height: 100%;
   font-family: 'Livvic', sans-serif;
+  overflow-x: hidden;
 }
 
 :root {

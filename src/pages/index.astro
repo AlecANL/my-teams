@@ -1,8 +1,12 @@
 ---
 import { Header } from '../components/header/header'
+import { Features } from '../components/home/features/features'
+import { HeroHome } from '../components/home/hero/hero'
 import MainLayout from '../layout/mainLayout.astro'
 ---
 
 <MainLayout title='My Team'>
   <Header client:load />
+  <HeroHome />
+  <Features />
 </MainLayout>

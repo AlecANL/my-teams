@@ -1,0 +1,54 @@
+.feature-card {
+  text-align: center;
+}
+
+.feature-card h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--light-coral);
+  font-size: 1.125rem;
+}
+
+.box {
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--police_blue);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.box i {
+  position: absolute;
+  color: var(--rapture_blue);
+  font-size: 3.5rem;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .feature-card {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    text-align: start;
+    column-gap: 1.5rem;
+    grid-template-areas:
+      'icon title'
+      'icon description';
+  }
+
+  .image-box {
+    grid-area: icon;
+    align-self: center;
+  }
+
+  .feature-card h4 {
+    grid-area: title;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .feature-card p {
+    grid-area: description;
+  }
+}

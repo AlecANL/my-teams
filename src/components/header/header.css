@@ -2,6 +2,7 @@
   background: var(--midnight_green);
   color: var(--just-white);
   padding: 1.5rem;
+  z-index: 1;
 }
 
 .header-content {

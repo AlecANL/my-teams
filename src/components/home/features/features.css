@@ -1,0 +1,72 @@
+.features {
+  position: relative;
+  background-color: var(--sacramento_state_green);
+  color: var(--just-white);
+}
+
+.features-content {
+  padding: 6.25rem 1.5rem 4rem 1.5rem;
+}
+
+.f_image-pattern {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  right: -105px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.features h3 {
+  position: relative;
+  max-width: 240px;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.features h3:before {
+  position: absolute;
+  top: -2rem;
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: var(--light-coral);
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .features-content {
+    padding-left: 6.125rem;
+    padding-right: 6.125rem;
+  }
+
+  .features-list {
+    margin-top: 4rem;
+  }
+
+  .features h3 {
+    max-width: 445px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .features-content {
+    display: flex;
+    gap: 7.8125rem;
+    padding: 8.75rem 0;
+  }
+
+  .features-list {
+    margin: 0;
+  }
+
+  .f_image-pattern {
+    top: 69%;
+  }
+}
