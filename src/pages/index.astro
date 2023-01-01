@@ -4,9 +4,12 @@ import { Features } from '../components/home/features/features'
 import { HeroHome } from '../components/home/hero/hero'
 import { Testimonials } from '../components/home/testimonials/testimonials'
 import MainLayout from '../layout/mainLayout.astro'
+
+const screenshotUrl = 'https://github.com/AlecANL/my-teams/blob/main/public/assets/home.jpg?raw=true'
+const demo = 'https://myteams-v1.netlify.app/'
 ---
 
-<MainLayout title='My Team'>
+<MainLayout demo={demo} screenshotUrl={screenshotUrl} title='My Team'>
   <Header client:load />
   <HeroHome />
   <Features />

@@ -9,6 +9,8 @@ import contactFeaturesJson from '../data/contact-features.json'
 import '../styles/globals.css'
 import '../styles/contact.css'
 import '../styles/icons.css'
+
+const screenshotUrl = 'https://github.com/AlecANL/my-teams/blob/main/public/assets/contact.jpg?raw=true'
 ---
 
 <html lang='en'>
@@ -18,6 +20,26 @@ import '../styles/icons.css'
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
+
+    <!-- HTML Meta Tags -->
+    <meta name='description' content='This is a solution to the myteam website challenge on Frontend Mentor' />
+
+    <!-- Facebook Meta Tags -->
+    <meta property='og:url' content='https://myteams-v1.netlify.app/contact/' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='My Team' />
+    <meta property='og:description' content='This is a solution to the myteam website challenge on Frontend Mentor' />
+    <meta property='og:image' content={screenshotUrl} />
+
+    <!-- Twitter Meta Tags -->
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta property='twitter:domain' content='myteams-v1.netlify.app' />
+    <meta property='twitter:url' content='https://myteams-v1.netlify.app/contact/' />
+    <meta name='twitter:title' content='My Team' />
+    <meta name='twitter:description' content='This is a solution to the myteam website challenge on Frontend Mentor' />
+    <meta name='twitter:image' content={screenshotUrl} />
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
     <link rel='preconnect' href='https://fonts.googleapis.com' /><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin /><link
       href='https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap'

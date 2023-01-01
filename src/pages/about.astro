@@ -4,9 +4,12 @@ import { HeroAbout } from '../components/about/hero/hero'
 import { TeamMembers } from '../components/about/team/team'
 import { Header } from '../components/header/header'
 import MainLayout from '../layout/mainLayout.astro'
+
+const screenshotUrl = 'https://github.com/AlecANL/my-teams/blob/main/public/assets/about.jpg?raw=true'
+const demo = 'https://myteams-v1.netlify.app/about/'
 ---
 
-<MainLayout title='My Team'>
+<MainLayout demo={demo} screenshotUrl={screenshotUrl} title='My Team'>
   <Header client:load />
   <HeroAbout />
   <TeamMembers client:load />

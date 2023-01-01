@@ -17,12 +17,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![home](https://github.com/AlecANL/my-teams/blob/main/public/assets/home.jpg?raw=true)
+![home](https://github.com/AlecANL/my-teams/blob/main/public/assets/about.jpg?raw=true)
+![home](https://github.com/AlecANL/my-teams/blob/main/public/assets/contact.jpg?raw=true)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/AlecANL/my-teams)
+- Live Site URL: [Add live site URL here](https://myteams-v1.netlify.app/)
 
 ## My process
 
@@ -37,6 +39,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@alecanl](https://www.frontendmentor.io/profile/AlecANL)
+- Twitter - [@alecanl](https://twitter.com/alecANL)
