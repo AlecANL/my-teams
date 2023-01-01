@@ -19,8 +19,8 @@ export function Companies() {
         <div className='companies-content'>
           <h3>Some of our clients</h3>
           <div className='company-content-list'>
-            {companyList.map((company: ICompany) => (
-              <img className='company-logo' src={company?.url} alt={`logo ${company?.name}`} />
+            {companyList.map((company: ICompany, idx) => (
+              <img key={idx} className='company-logo' src={company?.url} alt={`logo ${company?.name}`} />
             ))}
           </div>
         </div>
