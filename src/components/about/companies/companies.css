@@ -1,0 +1,75 @@
+.companies {
+  position: relative;
+  background-color: var(--sacramento_state_green);
+  color: var(--just-white);
+  overflow: hidden;
+}
+
+.companies-content {
+  padding: 5.5rem 1.5rem;
+}
+
+.company-content-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.375rem;
+}
+
+.companies-content h3 {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.company-logo {
+  width: 146px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.bg-about-pattern {
+  position: absolute;
+  top: -20%;
+  left: -100px;
+}
+
+@media (min-width: 768px) {
+  .company-content-list {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .company-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bg-about-pattern {
+    left: -40px;
+    top: -40%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bg-about-pattern {
+    top: 0;
+    left: 0;
+  }
+
+  .company-content-list {
+    gap: 100px;
+  }
+
+  .company-logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .companies-content h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}

@@ -1,0 +1,61 @@
+.team-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  background-color: var(--sacramento_state_green);
+}
+
+.user-box {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid hsla(179, 100%, 88%);
+}
+
+.front-box,
+.back-box {
+  flex: 1;
+  margin-bottom: 1.75rem;
+}
+
+.back-box,
+.back-icon {
+  display: none;
+}
+
+.name {
+  display: block;
+  font-size: 1.125rem;
+  color: var(--rapture_blue);
+}
+
+.name,
+.position {
+  text-align: center;
+}
+
+.position {
+  font-style: italic;
+  display: block;
+}
+
+.team-card button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: -45px;
+  background-color: var(--light-coral);
+  border-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.front-icon.icon-close1 {
+  transform: rotate(45deg);
+}

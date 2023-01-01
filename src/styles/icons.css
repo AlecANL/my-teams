@@ -27,6 +27,11 @@
 .icon-close:before {
   content: '\e907';
 }
+
+.icon-close1:before {
+  content: '\e907';
+}
+
 .icon-stats:before {
   content: '\e900';
 }

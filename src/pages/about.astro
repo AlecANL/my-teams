@@ -1,0 +1,14 @@
+---
+import { Companies } from '../components/about/companies/companies'
+import { HeroAbout } from '../components/about/hero/hero'
+import { TeamMembers } from '../components/about/team/team'
+import { Header } from '../components/header/header'
+import MainLayout from '../layout/mainLayout.astro'
+---
+
+<MainLayout title='My Team'>
+  <Header client:load />
+  <HeroAbout />
+  <TeamMembers />
+  <Companies />
+</MainLayout>

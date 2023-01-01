@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Nikita Marks",
+    "position": "Founder & CEO",
+    "image": "/assets/avatar-nikita.jpg",
+    "description": "“Empowered teams create truly amazing products. Set the north star and let them follow it.”",
+    "socialMedia": [
+      {
+        "name": "twitter",
+        "link": "https://twitter.com",
+        "icon": "icon-twitter"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Co-founder & COO",
+    "position": "Co-founder & COO",
+    "image": "/assets/avatar-christian.jpg",
+    "description": "“Empowered teams create truly amazing products. Set the north star and let them follow it.”",
+    "socialMedia": [
+      {
+        "name": "twitter",
+        "link": "https://twitter.com",
+        "icon": "icon-twitter"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cruz Hamer",
+    "position": "Co-founder & CTO",
+    "image": "/assets/avatar-cruz.jpg",
+    "description": "“Empowered teams create truly amazing products. Set the north star and let them follow it.”",
+    "socialMedia": [
+      {
+        "name": "twitter",
+        "link": "https://twitter.com",
+        "icon": "icon-twitter"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Drake Heaton",
+    "position": "Business Development Lead",
+    "image": "/assets/avatar-drake.jpg",
+    "description": "“Empowered teams create truly amazing products. Set the north star and let them follow it.”",
+    "socialMedia": [
+      {
+        "name": "twitter",
+        "link": "https://twitter.com",
+        "icon": "icon-twitter"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Griffin Wise",
+    "position": "Lead Marketing",
+    "image": "/assets/avatar-griffin.jpg",
+    "description": "“Empowered teams create truly amazing products. Set the north star and let them follow it.”",
+    "socialMedia": [
+      {
+        "name": "twitter",
+        "link": "https://twitter.com",
+        "icon": "icon-twitter"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Aden Allan",
+    "position": "Co-founder & CTO",
+    "image": "/assets/avatar-aden.jpg",
+    "description": "“Empowered teams create truly amazing products. Set the north star and let them follow it.”",
+    "socialMedia": [
+      {
+        "name": "twitter",
+        "link": "https://twitter.com",
+        "icon": "icon-twitter"
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "url": "/assets/logo-the-verge.png",
+    "name": "The verge"
+  },
+  {
+    "id": 2,
+    "url": "/assets/logo-jakarta-post.png",
+    "name": "Jakarta post"
+  },
+  {
+    "id": 3,
+    "url": "/assets/logo-the-guardian.png",
+    "name": "The guardian"
+  },
+  {
+    "id": 4,
+    "url": "/assets/logo-tech-radar.png",
+    "name": "Tech radar"
+  },
+  {
+    "id": 5,
+    "url": "/assets/logo-gadgets-now.png",
+    "name": "Gadgets now"
+  }
+]

@@ -1,0 +1,50 @@
+.testimonial-card {
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+}
+
+.testimonial-card blockquote {
+  position: relative;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  z-index: 1;
+}
+
+.testimonial-card blockquote:before {
+  content: '"';
+}
+
+.testimonial-card blockquote:after {
+  content: '"';
+}
+
+.name {
+  display: block;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  margin-bottom: 2px;
+  color: var(--rapture_blue);
+}
+
+.position {
+  font-style: italic;
+  font-size: 0.8125rem;
+}
+
+.user-box {
+  width: 3.875rem;
+  height: 3.875rem;
+  border-radius: 50%;
+  border: 2px solid hsla(179, 100%, 88%);
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.quote-icon {
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,64 @@
+.hero-about {
+  position: relative;
+  background-color: var(--midnight_green);
+  color: var(--just-white);
+  overflow: hidden;
+}
+
+.hero-about-content h1 {
+  margin-bottom: 1rem;
+}
+
+.hero-about-content {
+  padding: 6.75rem 1.5rem;
+  text-align: center;
+}
+
+.hero-about img {
+  position: absolute;
+  right: -120px;
+  bottom: -25%;
+}
+
+@media (min-width: 768px) {
+  .hero-about-content h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-about-content {
+    padding-left: 10.3125rem;
+    padding-right: 10.3125rem;
+  }
+
+  .hero-about img {
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-about-content {
+    display: flex;
+    gap: 1.875rem;
+    padding: 7.5rem 1.5rem;
+    text-align: start;
+  }
+
+  .hero-about-content h1 {
+    flex: 1 0 21.875rem;
+  }
+
+  .hero-about-content p {
+    position: relative;
+  }
+
+  .hero-about-content p:before {
+    position: absolute;
+    content: '';
+    top: -2.5rem;
+    width: 3.125rem;
+    height: 0.25rem;
+    background-color: var(--light-coral);
+  }
+}
