@@ -5,7 +5,7 @@ import { Wrapper } from '../wrapper/wrapper'
 
 export function ContactSection() {
   return (
-    <div className='contact'>
+    <section aria-label='contact section' className='contact'>
       <Wrapper>
         <div className='contact-content'>
           <h3>Ready to get started?</h3>
@@ -13,6 +13,6 @@ export function ContactSection() {
         </div>
       </Wrapper>
       <img className='pattern' src={bgPatternContactSection} alt='bg pattern' aria-hidden={true} />
-    </div>
+    </section>
   )
 }
