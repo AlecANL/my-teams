@@ -1,0 +1,164 @@
+.contact {
+  position: relative;
+  background-color: var(--midnight_green);
+  color: var(--just-white);
+  overflow: hidden;
+}
+
+.contact h2 {
+  color: var(--light-coral);
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.contact h1 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 5.5rem 1.5rem;
+}
+
+.bg_contact-pattern1,
+.bg_contact-pattern2 {
+  position: absolute;
+}
+
+.bg_contact-pattern1 {
+  display: none;
+}
+
+.bg_contact-pattern2 {
+  bottom: -115px;
+  right: -110px;
+}
+
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background-color: unset;
+  border-color: transparent;
+  border-bottom: 1px solid var(--just-white);
+  opacity: 0.6;
+  color: var(--just-white);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  opacity: 0.6;
+  color: var(--just-white);
+}
+
+.form-group input:hover::placeholder,
+.form-group textarea:hover::placeholder {
+  color: var(--just-white);
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+  opacity: 1;
+}
+
+.form-group input {
+  height: 2.625rem;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 3.75rem;
+}
+
+.contact form button {
+  margin-top: calc(2rem - 1.5rem);
+  padding: 0.75rem 2rem;
+  background-color: var(--just-white);
+  align-self: flex-start;
+  color: var(--deep_jungle_green);
+  border-radius: 100px;
+  font-size: 1.125rem;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.contact-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding: 0 1rem;
+}
+.contact-feature {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-box {
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--police_blue);
+  border-radius: 50%;
+}
+
+.contact-box i {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3.5rem;
+  color: var(--rapture_blue);
+}
+
+@media (min-width: 768px) {
+  .contact-content {
+    padding-left: 7.9375rem;
+    padding-right: 7.9375rem;
+  }
+
+  .bg_contact-pattern1 {
+    display: block;
+    top: 50px;
+    left: -100px;
+  }
+
+  .bg_contact-pattern2 {
+    bottom: 0;
+  }
+
+  .contact h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact-content {
+    flex-direction: row;
+    padding: 7.75rem 1.5rem;
+  }
+
+  .rigth-side {
+    flex: 1;
+  }
+
+  .contact h1,
+  .contact h2 {
+    margin: 0;
+    text-align: start;
+  }
+}

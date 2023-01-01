@@ -32,27 +32,35 @@ export function TeamCard(props: ITeamCardProps) {
 
   return (
     <div className='team-card'>
-      <div className='front-box'>
-        <div className='user-box'>
-          <img src={teamCard?.image} alt={`${teamCard?.name} team of myTeam`} />
+      <div className='team-card-helper'>
+        <div className='front-box'>
+          <div className='user-box'>
+            <img src={teamCard?.image} alt={`${teamCard?.name} team of myTeam`} />
+          </div>
+          <span className='name'> {teamCard?.name} </span>
+          <span className='position'> {teamCard?.position} </span>
         </div>
-        <span className='name'> {teamCard?.name} </span>
-        <span className='position'> {teamCard?.position} </span>
-      </div>
-      <div className={`back-box ${showClassName}`}>
-        <span className='name'> {teamCard?.name} </span>
-        <p className='description'> {teamCard?.description} </p>
-        <div className='social-box'>
-          {teamCard?.socialMedia?.map((socialMedia: ITeamCardSocialMedia) => (
-            <a href={socialMedia?.link} aria-label={`link url to ${socialMedia?.name}`}>
-              <i className={socialMedia?.icon}></i>
-            </a>
-          ))}
+        <div className={`back-box ${showClassName}`}>
+          <span className='name'> {teamCard?.name} </span>
+          <p className='description'> {teamCard?.description} </p>
+          <div className='social__box'>
+            {teamCard?.socialMedia?.map((socialMedia: ITeamCardSocialMedia, idx) => (
+              <a
+                rel='noopener noreferrer'
+                target='_blank'
+                href={socialMedia?.link}
+                aria-label={`link url to ${socialMedia?.name}`}
+                key={idx}
+              >
+                <i className={socialMedia?.icon}></i>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
-      <button onClick={handleShowCardDetail}>
-        <i className='front-icon icon-close1'></i>
-        <i className={`back-icon icon-close1 ${showClassName}`}></i>
+
+      <button className={showClassName} onClick={handleShowCardDetail}>
+        <i className={`front-icon icon-close1 ${showClassName}`}></i>
       </button>
     </div>
   )

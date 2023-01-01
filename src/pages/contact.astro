@@ -1,0 +1,91 @@
+---
+import { Footer } from '../components/footer/footer'
+import { Header } from '../components/header/header'
+import { Wrapper } from '../components/wrapper/wrapper'
+import bgPattern1 from '/assets/bg-pattern-about-2-contact-1.svg'
+import bgPattern2 from '/assets/bg-pattern-contact-2.svg'
+import contactFeaturesJson from '../data/contact-features.json'
+
+import '../styles/globals.css'
+import '../styles/contact.css'
+import '../styles/icons.css'
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
+
+    <link rel='preconnect' href='https://fonts.googleapis.com' /><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin /><link
+      href='https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap'
+      rel='stylesheet'
+    />
+    <title>My Team | Contact</title>
+  </head>
+  <body>
+    <Header client:load />
+    <main class='contact'>
+      <Wrapper>
+        <div class='contact-content'>
+          <div class='left-side'>
+            <h1>Contact</h1>
+            <h2>Ask us about</h2>
+            <div class='contact-features'>
+              {
+                contactFeaturesJson.map(feature => {
+                  return (
+                    <div class='contact-feature'>
+                      <div class='contact-icon-box'>
+                        <div class='contact-box'>
+                          <i class={`${feature?.icon}`} />
+                        </div>
+                      </div>
+                      <p>{feature?.title}</p>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div>
+          <div class='rigth-side'>
+            <form id='form'>
+              <div class='form-group'>
+                <input required placeholder='Name' type='text' name='name' id='name' />
+              </div>
+              <div class='form-group'>
+                <input required placeholder='Email Address' type='email' name='email' id='email' />
+              </div>
+              <div class='form-group'>
+                <input required placeholder='Company Name' type='text' name='companyName' id='companyName' />
+              </div>
+              <div class='form-group'>
+                <input required type='text' placeholder='Title' name='title' id='title' />
+              </div>
+              <div class='form-group'>
+                <textarea required placeholder='Message' name='message' id='message' cols='30' rows='10'></textarea>
+              </div>
+              <button>
+                <span>submit</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </Wrapper>
+
+      <img class='bg_contact-pattern1' src={bgPattern1} alt='bg pattern' aria-hidden={true} />
+      <img class='bg_contact-pattern2' src={bgPattern2} alt='bg pattern' aria-hidden={true} />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<script>
+  const $form = document.getElementById('form')
+
+  $form?.addEventListener('submit', e => {
+    e.preventDefault()
+  })
+</script>

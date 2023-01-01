@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "icon": "icon-person",
+    "title": "The quality of our talent network"
+  },
+  {
+    "id": 2,
+    "icon": "icon-setting",
+    "title": "Usage & implementation of our software"
+  },
+  {
+    "id": 3,
+    "icon": "icon-stats",
+    "title": "How we help drive innovation"
+  }
+]

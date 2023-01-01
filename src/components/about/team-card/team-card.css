@@ -1,9 +1,12 @@
 .team-card {
+  padding: 2rem 1.5rem;
+  background-color: var(--sacramento_state_green);
+}
+
+.team-card-helper {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 1.5rem;
-  background-color: var(--sacramento_state_green);
 }
 
 .user-box {
@@ -22,7 +25,6 @@
   margin-bottom: 1.75rem;
 }
 
-.back-box,
 .back-icon {
   display: none;
 }
@@ -49,7 +51,7 @@
   align-items: center;
   width: 56px;
   height: 56px;
-  margin-bottom: -45px;
+  margin: 0 auto -45px auto;
   background-color: var(--light-coral);
   border-color: transparent;
   border-radius: 50%;
@@ -58,4 +60,55 @@
 
 .front-icon.icon-close1 {
   transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.front-icon.icon-close1.show {
+  transform: rotate(0);
+}
+
+.team-card-helper {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.back-box {
+  position: absolute;
+  background-color: var(--sacramento_state_green);
+  transform: translateY(100%);
+  height: 100%;
+  transition: transform 0.3s ease-in;
+  z-index: 1;
+  text-align: center;
+}
+
+.back-box.show {
+  transform: translateY(0);
+}
+
+.team-card button:hover {
+  background-color: var(--rapture_blue);
+}
+
+.social__box {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__box a {
+  text-decoration: none;
+  color: var(--just-white);
+}
+
+.social__box a:hover {
+  color: var(--light-coral);
+}
+
+@media (min-width: 768px) {
+  .back-box {
+    /* padding: 2.1875rem 3rem; */
+  }
 }
