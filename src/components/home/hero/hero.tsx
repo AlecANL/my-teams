@@ -6,7 +6,7 @@ import { Wrapper } from '../../wrapper/wrapper'
 
 export function HeroHome() {
   return (
-    <section className='hero'>
+    <main className='hero'>
       <Wrapper>
         <div className='hero-content'>
           <h2>
@@ -22,6 +22,6 @@ export function HeroHome() {
         <img className='hero-image2' src={bgPatternHome2} alt='hero image 2' aria-hidden={true} />
       </div>
       <img className='hero-image1' src={bgPatternHome1} alt='hero image 1' aria-hidden={true} />
-    </section>
+    </main>
   )
 }

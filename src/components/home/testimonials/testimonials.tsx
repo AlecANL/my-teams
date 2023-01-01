@@ -10,7 +10,7 @@ import './testimonials.css'
 
 export function Testimonials() {
   return (
-    <div className='testimonials'>
+    <section aria-label='testimonials of success stories' className='testimonials'>
       <Wrapper>
         <div className='testimonials-content'>
           <h3>
@@ -25,6 +25,6 @@ export function Testimonials() {
       </Wrapper>
       <img className='bg-pattern1' src={bgPattern1} alt='bg pattern 1' aria-hidden={true} />
       <img className='bg-pattern2' src={bgPattern2} alt='bg pattern 2' aria-hidden={true} />
-    </div>
+    </section>
   )
 }

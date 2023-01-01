@@ -26,13 +26,13 @@ export function Footer() {
             Call Us: 949-833-7432 <br />
           </address>
           <div className='footer_social-media'>
-            <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/'>
+            <a aria-label={`link to facebook`} target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/'>
               <i className='icon-facebook'></i>
             </a>
-            <a target='_blank' rel='noopener noreferrer' href='https://www.pinterest.com/'>
+            <a aria-label={`link to pinterest`} target='_blank' rel='noopener noreferrer' href='https://www.pinterest.com/'>
               <i className='icon-pint'></i>
             </a>
-            <a target='_blank' rel='noopener noreferrer' href='https://www.twitter.com/'>
+            <a aria-label={`link to twitter`} target='_blank' rel='noopener noreferrer' href='https://www.twitter.com/'>
               <i className='icon-twitter'></i>
             </a>
           </div>

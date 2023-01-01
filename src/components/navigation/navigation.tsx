@@ -30,7 +30,7 @@ export function Navigation(props: INavProps) {
         <img className='bg-nav-pattern' src={bgPatternNavImage} alt='bg pattern nav' aria-hidden={true} />
         {menuNavList.map(item => (
           <li key={item.id}>
-            <a href={item.url}> {item.name} </a>
+            <a href={item.url}>{item.name}</a>
           </li>
         ))}
       </ul>
