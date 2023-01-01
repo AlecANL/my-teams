@@ -16,7 +16,9 @@ export function Header() {
     <header className='header'>
       <Wrapper>
         <div className='header-content'>
-          <h1>myteam</h1>
+          <a href='/'>
+            <img src='/assets/logo.svg' alt='logo for my teams' />
+          </a>
           <i onClick={toggleActiveMenu} className='icon-menu'></i>
           <Navigation isActiveMenu={isActive} toggleActiveMenu={toggleActiveMenu} />
         </div>
